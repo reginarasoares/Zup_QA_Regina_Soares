@@ -36,7 +36,7 @@ end
 
 
 
-
+#busca incorreta
 Quando("eu faco uma busca por {string} que nao seja um produto") do |busca_incorreta|
     fill_in(name: "conteudo", with: busca_incorreta)
     sleep(2)
@@ -47,4 +47,27 @@ end
 Entao("eu verifico se aparece a mensagem que nenhum produto foi encontrado") do
     msg = find(".TextUI-sc-12tokcy-0.goIRTq").text
     expect(msg). to eql "Ops!"
+end
+
+
+
+#produto indisponivel
+Quando("eu busco por um {string}") do |name_produto1|
+    fill_in(name: "conteudo", with: name_produto1)
+    sleep(2)
+    find("#h_search-btn").click
+    sleep(2)
+end
+  
+Quando("escolho um produto que esta {int}") do |num_opcao1|
+    page.execute_script ("window.scrollBy(0,1000)")
+    opcao1 = all(".gYIWNc") [num_opcao1]
+    sleep(2)
+    opcao1.click
+    sleep(2)
+end
+  
+Entao("eu verifico se aparece a mensagem que nao pode adicionar ao carrinho") do
+    msg_ind = find("#title-stock").text
+    expect(msg_ind). to eql "Ops! Já vendemos o estoque"
 end

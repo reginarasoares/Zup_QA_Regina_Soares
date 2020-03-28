@@ -27,3 +27,14 @@ Exemplos:
 |   algo   |
 | "123456" |
 |  "////"  |
+
+
+
+@indisponivel
+Esquema do Cenario: Adicionar produto indisponível no carrinho
+Quando eu busco por um <item>
+E escolho um produto que esta <indisponivel>
+Entao eu verifico se aparece a mensagem que nao pode adicionar ao carrinho
+Exemplos:
+|                        item                           | indisponivel|
+| "Alcool Isopropilico 250ml Com Bico Aplicador 1litro" |      10     |
