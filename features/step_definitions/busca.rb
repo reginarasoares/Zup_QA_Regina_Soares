@@ -16,10 +16,16 @@ Quando("eu faco uma busca por um {string}") do |name_produto|
 end
 
 Entao("eu verifico se a busca foi feita corretamente") do
-    sleep(2)
-    resultado = all(".gYIWNc") [0]
-    puts resultado.text.downcase
-    expect(resultado.text.downcase).to include(@produto)
+    i = 0
+    page_item = 24
+   
+    while i < page_item
+        resultado = all(".gYIWNc") [i]
+        puts "#{i} - #{resultado.text} + \n"
+        expect(resultado.text.downcase).to include(@produto)
+        i = i+1
+    end
+
 end
 
 

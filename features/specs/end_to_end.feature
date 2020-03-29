@@ -10,7 +10,7 @@ Dado eu estar na pagina inicial do site
 Quando eu faco uma busca por um <produto>
 Entao eu verifico se a busca foi feita corretamente
 Exemplos:
-|                        produto                          |
+|                        produto                   |
 |  "Alcool Isopropilico 250ml Com Bico Aplicador"  |
 
 
