@@ -4,8 +4,8 @@
 
 1. Organização do código
 <br>A atividade foi dividida em 3 passos. 
-<br>- "busca.feature" testa a função de busca, contendo um caso de sucesso e um fluxo alternativo.
-<br>- "add_carrinho.feature" testa a funcionalidade de adicionar um produto ao carrinho, e também contem um caso de sucesso e um fluxo alternativo
+<br>- "busca" testa a função de busca, contendo um caso de sucesso e um fluxo alternativo.
+<br>- "add_carrinho" testa a funcionalidade de adicionar um produto ao carrinho, e também contem um caso de sucesso e um fluxo alternativo
 <br>- "end_to_end" testa as funções de busca e adição ao carrinho com sucesso, de ponta a ponta.
 
 2. Validação da busca
@@ -27,7 +27,7 @@ __Windows__
 <br>Acesse o link abaixo e instale a versão mais recente do ruby com a versão DEVKIT
 <br>https://rubyinstaller.org/downloads/
 <br>Para verificar se a instalação foi bem sucedida, abra o terminal e utilize o comando:
-<br><>ruby -v
+<br>ruby -v
 
 
 2. Instalação das gems
