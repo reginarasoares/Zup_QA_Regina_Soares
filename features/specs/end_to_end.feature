@@ -10,7 +10,7 @@ Quando eu faco uma busca por um <produto>
 Entao eu verifico se a busca foi feita corretamente
 Exemplos:
 |   produto   |
-| "colchonete"|
+|  "poltrona" |
 
 
 Esquema do Cenario: Adicionar produto no carrinho com sucesso
