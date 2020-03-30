@@ -13,8 +13,8 @@ Quando eu escolho um produto <determinado>
 E adiciono o produto no carrinho
 Entao eu verifico se o produto foi adicionado corretamente
 Exemplos:
-|     determinado       |
-|            0          |
+|  determinado  |
+|       0       |
 
 
 @add_indisponivel
@@ -22,5 +22,6 @@ Esquema do Cenario: Adicionar produto indisponível no carrinho
 Quando eu escolho um produto <indisponivel>
 Entao eu verifico se aparece a mensagem que nao pode adicionar ao carrinho
 Exemplos:
-| indisponivel|
-|      10     |
+| indisponivel |
+|      5       |
+|     11       |

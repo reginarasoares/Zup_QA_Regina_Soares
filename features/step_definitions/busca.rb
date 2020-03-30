@@ -10,9 +10,7 @@ end
 Quando("eu faco uma busca por um {string}") do |name_produto|
     @produto = name_produto.downcase
     fill_in(name: "conteudo", with: @produto)
-    sleep(2)
     find("#h_search-btn").click
-    sleep(2)
 end
 
 Entao("eu verifico se a busca foi feita corretamente") do
@@ -21,7 +19,6 @@ Entao("eu verifico se a busca foi feita corretamente") do
    
     while i < page_item
         resultado = all(".gYIWNc") [i]
-        puts "#{i} - #{resultado.text} + \n"
         expect(resultado.text.downcase).to include(@produto)
         i = i+1
     end
